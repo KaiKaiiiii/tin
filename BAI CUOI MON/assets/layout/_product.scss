@@ -1,0 +1,47 @@
+.product {
+  padding: 10rem 0;
+  background-color: $white;
+  .main__heading {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+  &__wrapper {
+    @include flexBox(center, center, column);
+  }
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0 6rem;
+  }
+  &__item {
+    background-color: $white;
+    min-height: 50rem;
+    min-width: 30rem;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 2rem;
+  }
+  &__name {
+    font-size: 2.4rem;
+    font-family: $title-font;
+    margin: 2rem 0;
+    font-weight: 600;
+  }
+  &__icon {
+    font-size: 1.2rem;
+    color: #e7b845;
+    margin-bottom: 2rem;
+  }
+  &__bottom {
+    @include flexBox(center, space-between);
+  }
+  &__price {
+    font-size: 3.4rem;
+    font-weight: 700;
+  }
+  .order__btn {
+    width: 12.6rem;
+    height: 5rem;
+    @include flexBox(center, center);
+  }
+}
